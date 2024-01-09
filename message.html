@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <style>
+        *{margin:0;padding:0;box-sizing: border-box;font-family: sans-serif;}
+        body{background:#000;display: flex;align-items: center;justify-content: center;min-height: 100vh;
+            }
+        .content {position:relative;}
+        .content h2{
+                        /* color:#fff; */
+                        font-size:9em;
+                        position: absolute;
+                        transform: translate(-50%,-50%);
+                    }
+                    .content h2:nth-child(1){
+                        color:transparent;
+                        -webkit-text-stroke: 2px #03a9f4;
+                    }
+                    .content h2:nth-child(2){
+                        color:#03a9f4;
+                        animation:wave 2s ease-in-out infinite;
+                    }
+                    @keyframes wave {
+                0%,100%{clip-path: polygon(1% 29%, 23% 34%, 38% 42%, 48% 53%, 68% 53%, 80% 46%, 91% 43%, 98% 35%, 100% 100%, 1% 100%);}
+                50%{clip-path: polygon(0 58%, 21% 56%, 42% 61%, 66% 48%, 75% 43%, 81% 33%, 91% 28%, 97% 20%, 100% 99%, 0% 99%);}
+                
+            }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>Water</h2>
+        <h2>Water</h2>
+    </div>
+
+</body>
+</html>
